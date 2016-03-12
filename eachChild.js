@@ -4,7 +4,7 @@ $_.eachChildIn("#parent-id",{
       TargetedChildren: "p",
       Fn: function(child){
 			
-     		 //Do something with the children      
+     	//Do something with the children      
       
       }
 
