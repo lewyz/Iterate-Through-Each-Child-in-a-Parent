@@ -9,7 +9,7 @@ Example
 -------
 
 ```js
-$_.eachChildIn("#parent-id",{ 
+$_.eachChildIn("#parent-id", { 
 			
       TargetedChildren: "p",
       Fn: function(idx, child){
@@ -17,6 +17,7 @@ $_.eachChildIn("#parent-id",{
      	child.onmouseover = function(){
      	    this.setAttribute("data-id", idx);
      	}    
+     
       }
 }); 
 ```
