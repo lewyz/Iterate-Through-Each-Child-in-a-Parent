@@ -6,16 +6,17 @@ then call a function for each child element.
 Version 0.1
 
 Demo
+-------
 
-$_.eachChildIn("#my-id",{
-    Fn: function(idx, child){
-     
-      child.onmouseover = function(){
-      	this.style.cssText = "color: red; text-decoration: underline";
+$_.eachChildIn("#parent-id",{ 
+			
+      TargetedChildren: "p",
+      Fn: function(idx, child){
+			
+     	child.onmouseover = function(){
+     	    this.setAttribute("data-id", idx);
+     	}    
+      
       }
-      child.onmouseout = function(){
-      	this.style.cssText = "color: black; text-decoration: none";
-      }
-   
-    }
-});
+
+}); 
