@@ -14,7 +14,7 @@ $_.eachChildIn("#parent-id",{
 var $_ = window.$_ || (window.$_ = {});
 
 (function(){
-	"use strict"
+    "use strict"
 	
     $_.eachChildIn = function(parent, obj){
 
@@ -27,13 +27,13 @@ var $_ = window.$_ || (window.$_ = {});
       	
         this.childElementTypes = 
         	typeof obj.TargetedChildren !== "undefined" ? 
-          obj.TargetedChildren : 
-          this.children[i].nodeName.toLowerCase();
+	        obj.TargetedChildren : 
+	        this.children[i].nodeName.toLowerCase();
         
         if(this.childElementTypes === this.children[i].nodeName.toLowerCase() &&
            this.children[i].nodeType !== 3){
-						idx++;
-            obj.Fn(idx, this.children[i]);
+		idx++;
+	        obj.Fn(idx, this.children[i]);
 
         }
       }
