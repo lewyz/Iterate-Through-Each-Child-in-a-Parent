@@ -5,9 +5,18 @@ then call a function for each child element.
 
 Version 0.1
 
-Example
+Examples
 -------
 
+###Simple
+```js
+$_.eachChildIn("#parent-id", { 
+     Fn: function(idx, child){
+     	    child.setAttribute("data-id", idx);
+     }    
+}); 
+```
+###Extended
 ```js
 $_.eachChildIn("#parent-id", { 
 			
