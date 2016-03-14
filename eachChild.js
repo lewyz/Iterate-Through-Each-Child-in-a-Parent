@@ -11,19 +11,19 @@ $_.eachChildIn("#parent-id",{
 }); 
 */
 
-var $_ = window.$_ || (window.$_ = {});
+(function () {
+    "use strict";
+    
+    var $ = window.$ || (window.$ = {});		
+   
+    $.eachChildIn = function (parent, obj) {
 
-(function(){
-    "use strict"
-	
-    $_.eachChildIn = function(parent, obj){
+      	this._parent = document.querySelector(parent);
+      	this.children = this._parent.childNodes;
 
-      this._parent = document.querySelector(parent);
-      this.children = this._parent.childNodes;
-
-      var i = 0, idx = 0, l = this.children.length;
+      	var i = 0, idx = 0, l = this.children.length;
       
-      for( ; i < l; i++){
+      	for( ; i < l; i++){
       	
         this.childElementTypes = 
         	typeof obj.TargetedChildren !== "undefined" ? 
