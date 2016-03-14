@@ -3,7 +3,7 @@
 JavaScript: A very simple yet a handy tool, which helps you to iterate through a parent's children,
 then call a function for each child element.
 
-Version 0.1
+Version 0.0.1
 
 Examples
 -------
