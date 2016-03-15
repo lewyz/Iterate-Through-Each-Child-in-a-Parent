@@ -38,6 +38,6 @@ $_.eachChildIn("#parent-id",{
         }
       }
 
-    }
+    };
   
 }());
