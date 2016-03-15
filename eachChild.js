@@ -1,5 +1,5 @@
 /*
-$_.eachChildIn("#parent-id",{ 
+$.eachChildIn("#parent-id",{ 
 			
       TargetedChildren: "p",
       Fn: function(child){
