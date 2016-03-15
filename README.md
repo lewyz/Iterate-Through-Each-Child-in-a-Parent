@@ -26,7 +26,7 @@ $.eachChildIn("#parent-id", {
 			
      	child.onmouseover = function(){
      	    this.setAttribute("data-id", idx);
-     	}    
+     	};    
      
       }
 }); 
