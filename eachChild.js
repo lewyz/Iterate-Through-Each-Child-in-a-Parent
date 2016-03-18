@@ -18,11 +18,13 @@ $.eachChildIn("#parent-id",{
    
     $.eachChildIn = function (parent, obj) {
 
+      	var i = 0, idx = 0, l;
+
       	this._parent = document.querySelector(parent);
       	this.children = this._parent.childNodes;
-
-      	var i = 0, idx = 0, l = this.children.length;
-      
+	
+	l = this.children.length;
+	
       	for( ; i < l; i++){
       	
         this.childElementTypes = 
